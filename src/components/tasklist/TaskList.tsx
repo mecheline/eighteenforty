@@ -1,5 +1,3 @@
-"use client";
-
 import type React from "react";
 import { useState, useMemo, lazy, Suspense } from "react";
 // Import types for Task, Priority, and Status from Redux slice
