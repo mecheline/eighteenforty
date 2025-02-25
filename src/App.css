@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,11 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.app {
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--text);
+  transition: all 0.3s ease;
 }

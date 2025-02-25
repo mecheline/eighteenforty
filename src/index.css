@@ -1,13 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+:root {
+  --background: #ffffff;
+  --text: #333333;
+  --primary: #4caf50;
+  --secondary: #f44336;
+  --accent: #2196f3;
+  --border: #e0e0e0;
+}
+
+[data-theme="dark"] {
+  --background: #333333;
+  --text: #ffffff;
+  --primary: #81c784;
+  --secondary: #ff8a65;
+  --accent: #64b5f6;
+  --border: #555555;
+}
+
+body,
+html {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  overflow-x: hidden;
+  margin: auto;
+  background-color: var(--background);
+  color: var(--text);
+  transition: all 0.3s ease;
+}
+
+/* Add any global styles here */
+
+
+/* Sonner toast styles */
+[data-sonner-toaster][data-theme="light"] {
+  --toast-background: var(--background);
+  --toast-border: var(--border);
+  --toast-text: var(--text);
+  --toast-success: var(--primary);
+  --toast-error: var(--secondary);
+}
+
+[data-sonner-toaster][data-theme="dark"] {
+  --toast-background: var(--background);
+  --toast-border: var(--border);
+  --toast-text: var(--text);
+  --toast-success: var(--primary);
+  --toast-error: var(--secondary);
 }
