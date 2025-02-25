@@ -6,12 +6,12 @@
   color: var(--text);
 }
 
-.task-list h1 {
+.task-list header h1 {
   font-family: "Syne", serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 48px;
-   max-width: 600px;
+  max-width: 600px;
   margin: 20px auto;
 }
 
@@ -31,6 +31,11 @@
   border: 1px solid var(--border);
 }
 
+.task-list hr {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
 .task-items {
   display: flex;
   flex-wrap: wrap;
@@ -39,6 +44,19 @@
   max-width: 80%;
   margin: auto;
   gap: 10px;
+}
+
+.task-items .no_match {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 48px;
+  color: red;
+}
+.task-items .no_task {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 48px;
+  letter-spacing: 0.5px;
 }
 
 @media (max-width: 768px) {

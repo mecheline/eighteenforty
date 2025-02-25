@@ -5,14 +5,62 @@
   max-width: 600px;
   margin: auto;
 }
+.task-form .title_textarea_style {
+  width: 100%;
+  display: flex;
+  column-gap: 10px;
+  
+}
+@media (max-width: 768px) {
+  .task-form .title_textarea_style {
+    flex-direction: column;
+    
+  }
+}
+.task-form .title_textarea_style .title-textarea {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+@media (max-width: 768px) {
+  .task-form .title_textarea_style .title-textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.task-form .date_priority_status_style {
+  width: 100%;
+  display: flex;
+  column-gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .task-form .date_priority_status_style {
+    flex-direction: column;
+  }
+}
+
+.task-form .date_priority_status_style .date_priority_status {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+@media (max-width: 768px) {
+  .task-form .date_priority_status_style .date_priority_status {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
 
 .task-form input,
 .task-form textarea {
-  width: 97%;
+  width: inherit;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  background-color: #E4E2E3;
+  background-color: #e4e2e3;
 }
 
 .task-form select {
@@ -20,10 +68,10 @@
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  background-color: #E4E2E3;
+  background-color: #e4e2e3;
 }
 
-@media screen and (max-width: 680px) {
+@media (max-width: 768px) {
   .task-form input,
   .task-form textarea {
     width: 94%;
@@ -40,6 +88,8 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  width: fit-content;
+  
 }
 
 .task-form button:hover {

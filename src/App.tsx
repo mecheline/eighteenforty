@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
 // import { PersistGate } from "redux-persist/integration/react";
@@ -13,7 +13,9 @@ const App: React.FC = () => (
     <ThemeProvider>
       <div className="app">
         <ThemeToggle />
-        <TaskList />
+        <Suspense fallback={<div>Loading...</div>}>
+          <TaskList />
+        </Suspense>
       </div>
     </ThemeProvider>
     {/* <TaskModal /> */}

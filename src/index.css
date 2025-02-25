@@ -1,5 +1,3 @@
-
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -34,11 +32,10 @@ html {
   margin: auto;
   background-color: var(--background);
   color: var(--text);
-  transition: all 0.3s ease;
+  min-height: 100vh;
 }
 
 /* Add any global styles here */
-
 
 /* Sonner toast styles */
 [data-sonner-toaster][data-theme="light"] {
