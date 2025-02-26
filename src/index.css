@@ -1,12 +1,12 @@
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
+} */
 
 :root {
   --background: #ffffff;
   --text: #333333;
-  --primary: #4caf50;
+  --primary: #008080;
   --secondary: #f44336;
   --accent: #2196f3;
   --border: #e0e0e0;
@@ -15,7 +15,7 @@ code {
 [data-theme="dark"] {
   --background: #333333;
   --text: #ffffff;
-  --primary: #81c784;
+  --primary: #008080;
   --secondary: #ff8a65;
   --accent: #64b5f6;
   --border: #555555;
