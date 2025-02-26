@@ -45,6 +45,13 @@ const TaskItem: React.FC<TaskItemProps> = ({ task, onEdit, onDelete }) => {
         {/* Delete button with an aria-label for clarity.
             e.stopPropagation() prevents the click from triggering the parent onClick handler. */}
         <button
+          onClick={onEdit}
+          className="edit-btn"
+          aria-label={`edit task: ${task.title}`}
+        >
+          Edit
+        </button>
+        <button
           onClick={(e) => {
             e.stopPropagation();
             onDelete(task.id);

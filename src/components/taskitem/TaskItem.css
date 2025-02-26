@@ -6,12 +6,13 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: box-shadow 0.3s ease;
-  width: 40%;
+  width: 100%;
 }
 
-@media screen and (max-width:768px) {
-  .task-item{
-    width: 100%;
+@media screen and (max-width: 768px) {
+  .task-item {
+    width: 95%;
+    margin: auto;
   }
 }
 
@@ -48,6 +49,18 @@
   border: none;
   border-radius: 3px;
   cursor: pointer;
+}
+
+.edit-btn {
+  display: none;
+}
+
+@media screen and (max-width: 760px) {
+  .edit-btn {
+    display: flex;
+    background-color: var(--primary);
+    color: var(--background);
+  }
 }
 
 .delete-btn {
