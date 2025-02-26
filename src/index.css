@@ -6,7 +6,7 @@
 :root {
   --background: #ffffff;
   --text: #333333;
-  --primary: #008080;
+  --primary: #006D5B;
   --secondary: #f44336;
   --accent: #2196f3;
   --border: #e0e0e0;
@@ -15,7 +15,7 @@
 [data-theme="dark"] {
   --background: #333333;
   --text: #ffffff;
-  --primary: #008080;
+  --primary: #006D5B;
   --secondary: #ff8a65;
   --accent: #64b5f6;
   --border: #555555;

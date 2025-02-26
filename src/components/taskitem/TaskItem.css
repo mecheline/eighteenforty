@@ -59,13 +59,13 @@
   .edit-btn {
     display: flex;
     background-color: var(--primary);
-    color: var(--background);
+    color: #fff;
   }
 }
 
 .delete-btn {
   background-color: var(--secondary);
-  color: var(--background);
+  color: #fff;
 }
 
 @media (max-width: 768px) {

@@ -58,11 +58,10 @@
 
 .modal-actions button[type="button"] {
   background-color: var(--secondary);
-  color: var(--background);
+  color: #fff;
 }
 
 .modal-actions button[type="submit"] {
   background-color: var(--primary);
-  color: var(--background);
+  color: #fff;
 }
-
