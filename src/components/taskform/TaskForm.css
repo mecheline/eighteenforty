@@ -5,6 +5,34 @@
   max-width: 600px;
   margin: auto;
 }
+
+
+.task-form .add-task-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border: 2px dashed #dee2e6;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.task-form .add-task-button:hover {
+  background-color: #e9ecef;
+  border-color: #ced4da;
+}
+
+.task-form .plus-icon {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
 .task-form .title_textarea_style {
   width: 100%;
   display: flex;
@@ -81,7 +109,14 @@
   }
 }
 
-.task-form button {
+
+.task-form .button-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.task-form .button-group .add_btn {
   padding: 10px;
   background-color: #4caf50;
   color: white;
@@ -92,6 +127,18 @@
   
 }
 
-.task-form button:hover {
+.task-form .button-group .add_btn:hover {
   background-color: #45a049;
+}
+
+.task-form .button-group .cancel-button {
+  background-color: var(--secondary);
+  border: 1px solid var(--secondary);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-form .button-group .cancel-button:hover {
+  background-color: var(--secondary);
 }

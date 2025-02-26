@@ -15,6 +15,10 @@
   margin: 20px auto;
 }
 
+.task-list .loader_details {
+  text-align: center;
+}
+
 .task-filters {
   display: flex;
   justify-content: space-between;
@@ -29,6 +33,7 @@
   background-color: var(--background);
   color: var(--text);
   border: 1px solid var(--border);
+  border-radius: 10px;
 }
 
 .task-list hr {
@@ -44,6 +49,10 @@
   max-width: 80%;
   margin: auto;
   gap: 10px;
+}
+
+.task-items .loader {
+  text-align: center;
 }
 
 .task-items .no_match {

@@ -162,7 +162,7 @@ const TaskList: React.FC = () => {
       {/* Section for displaying the list of tasks */}
       <section className="task-items" aria-label="List of tasks">
         {/* Suspense fallback for lazy-loaded components */}
-        <Suspense fallback={<div>Loading tasks...</div>}>
+        <Suspense fallback={<div className="loader">Loading tasks...</div>}>
           {filteredAndSortedTasks.length > 0 && tasks.length > 0 ? (
             filteredAndSortedTasks.map((task) => (
               <TaskItem
@@ -183,7 +183,7 @@ const TaskList: React.FC = () => {
       </section>
 
       {/* Suspense wrapper for modals */}
-      <Suspense fallback={<div>Loading details...</div>}>
+      <Suspense fallback={<div className="loader_details">Loading details...</div>}>
         {/* Modal for editing task details */}
         {selectedTask && (
           <TaskDetailsModal
