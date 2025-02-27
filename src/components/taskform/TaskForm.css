@@ -148,11 +148,9 @@
   border-radius: 4px;
 }
 
-/* --- Remove default calendar icon and spinner only on iOS devices --- */
-@supports (-webkit-touch-callout: none) {
-  .task-form input[type="date"]::-webkit-inner-spin-button,
-  .task-form input[type="date"]::-webkit-calendar-picker-indicator {
-    display: none;
-    -webkit-appearance: none;
-  }
-}
+/* Remove the default calendar icon and spinner on iOS */
+/* .task-form input[type="date"]::-webkit-inner-spin-button,
+.task-form input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+} */
