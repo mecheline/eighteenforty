@@ -9,7 +9,7 @@
 .task-form .add-task-button {
   width: 100%;
   padding: 15px;
-  background-color: #006D5B;
+  background-color: #006d5b;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -113,7 +113,7 @@
 
 .task-form .button-group .add_btn {
   padding: 10px;
-  background-color: #006D5B;
+  background-color: #006d5b;
   color: white;
   border: none;
   border-radius: 4px;
@@ -135,4 +135,24 @@
 
 .task-form .button-group .cancel-button:hover {
   background-color: var(--secondary);
+}
+
+/* --- Added rules to override iOS native styling for date input --- */
+.task-form input[type="date"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #e4e2e3;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* --- Remove default calendar icon and spinner only on iOS devices --- */
+@supports (-webkit-touch-callout: none) {
+  .task-form input[type="date"]::-webkit-inner-spin-button,
+  .task-form input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+  }
 }
