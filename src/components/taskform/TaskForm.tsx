@@ -111,6 +111,7 @@ const TaskForm: React.FC<TaskFormProps> = ({ onAddTask }) => {
               <Input
                 id="date"
                 type="date"
+                placeholder="mm/dd/yyyy"
                 value={dueDate}
                 onChange={(e) => setDueDate(e.target.value)}
                 required
